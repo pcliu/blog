@@ -11,11 +11,9 @@ on:
 
 # 设置 GITHUB_TOKEN 的权限
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
-  deployments: write
-  actions: write
 
 # 只允许同时运行一个部署
 concurrency:
