@@ -1,0 +1,39 @@
+name: Build and Deploy Jekyll Site
+
+# 监听 main 分支的更改
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. 检出 blog 仓库
+    - name: Checkout Blog Repository
+      uses: actions/checkout@v4
+
+    # 2. 设置 Ruby 环境
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0'  # 设置为合适的 Ruby 版本
+
+    # 3. 安装依赖
+    - name: Install Dependencies
+      run: |
+        bundle install
+
+    # 4. 构建 Jekyll 站点
+    - name: Build Jekyll Site
+      run: |
+        bundle exec jekyll build
+
+    # 5. 部署到 GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site  # Jekyll 构建输出目录
