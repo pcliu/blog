@@ -13,6 +13,32 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# 语言设置
+lang: "zh-CN"
+
+# 分页配置
+paginate: 5
+
+# 站点的导航栏配置
+nav:
+  main:
+    - title: "首页"
+      url: /
+    - title: "归档"
+      url: /archive/
+    - title: "关于"
+      url: /about/
+      
+# 侧边栏的 TOC（目录）配置
+toc:
+  enable: true
+  number: true
+  exclude:
+    - h1
+    
+# 主题皮肤
+theme_skin: "light"
+
 # Exclude files from processing
 exclude:
   - .sass-cache/
