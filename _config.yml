@@ -38,16 +38,3 @@ toc:
     
 # 主题皮肤
 theme_skin: "light"
-
-# Exclude files from processing
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
