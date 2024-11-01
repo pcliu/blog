@@ -24,3 +24,7 @@ paginate: 5
 paginate_path: "/page:num/"
 
 skin: contrast
+# 加载自定义 CSS
+custom_css:
+  - "/assets/css/custom.css"
+
