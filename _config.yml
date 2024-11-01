@@ -23,5 +23,5 @@ sidebar:
 paginate: 5
 paginate_path: "/page:num/"
 
-minimal_mistakes_skin: "air"
+skin: contrast
 
