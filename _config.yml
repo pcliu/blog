@@ -13,6 +13,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+locale: "zh-CN"
 
 # 分页配置
 paginate: 5
