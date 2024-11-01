@@ -18,14 +18,6 @@ locale: "zh-CN"
 sidebar:
   nav: "docs" 
 
-defaults:
-  - scope:
-      path: ""
-      type: docs
-    values:
-      sidebar:
-        nav: "docs"
-
 # 分页配置
 paginate: 5
 
