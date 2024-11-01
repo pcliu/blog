@@ -7,7 +7,7 @@ url: "https://pcliu.github.io"  # 你的 GitHub Pages URL
 github_username: pcliu
 
 # Build settings
-theme: minima
+remote-theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -21,4 +21,6 @@ sidebar:
 # 分页配置
 paginate: 5
 paginate_path: "/page:num/"
+
+minimal_mistakes_skin: "contrastPermalink"
 
