@@ -7,7 +7,7 @@ url: "https://pcliu.github.io"  # 你的 GitHub Pages URL
 github_username: pcliu
 
 # Build settings
-remote-theme: minimal-mistakes-jekyll
+remote-theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
   - jekyll-sitemap
