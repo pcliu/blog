@@ -15,6 +15,9 @@ plugins:
 
 locale: "zh-CN"
 
+sidebar:
+  nav: "docs"
+
 # 分页配置
 paginate: 5
 
