@@ -15,8 +15,10 @@ plugins:
 
 locale: "zh-CN"
 
+sidebar:
+  nav: "docs" 
+
 defaults:
-  # _docs
   - scope:
       path: ""
       type: docs
