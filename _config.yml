@@ -19,4 +19,4 @@ locale: "zh-CN"
 paginate: 5
 
 # 主题皮肤
-skin: "contrast"
+minimal_mistakes_skin: "contrast"
