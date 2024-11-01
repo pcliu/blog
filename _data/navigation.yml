@@ -1,22 +1,14 @@
-header:
-  - title:      Docs
-    url:        /docs/en/quick-start
-  - title:      文档
-    url:        /docs/zh/quick-start
-  - titles:
-      en:       Archive
-      zh:       归档
-      zh-Hans:  归档
-      zh-Hant:  歸檔
-    url:        /archive.html
-  - titles:
-      en:       About
-      zh:       关于
-      zh-Hans:  关于
-      zh-Hant:  關於
-    url:        /about.html
-  - title:      GitHub
-    url:        https://github.com/kitian616/jekyll-TeXt-theme
+main:
+  - title: "首页"
+    url: "/"
+  - title: "关于"
+    url: "/about/"
+  - title: "分类"
+    url: "/categories/"
+  - title: "标签"
+    url: "/tags/"
+  - title: "归档"
+    url: "/archive/"
     
 docs:
   - title: Getting Started
