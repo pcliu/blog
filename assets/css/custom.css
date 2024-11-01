@@ -1,0 +1,23 @@
+/* 全局字体大小 */
+body {
+  font-size: 16px; /* 调整为你喜欢的大小，例如 14px, 15px 等 */
+  line-height: 1.8; /* 调整行距 */
+}
+
+/* 标题字体大小 */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* 调整文章正文的字体大小 */
+.post-content p {
+  font-size: 1rem;
+}
