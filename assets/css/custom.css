@@ -1,6 +1,6 @@
 /* 全局字体大小 */
 body {
-  font-size: 16px; /* 调整为你喜欢的大小，例如 14px, 15px 等 */
+  font-size: 14px; /* 调整为你喜欢的大小，例如 14px, 15px 等 */
   line-height: 1.8; /* 调整行距 */
 }
 
@@ -21,3 +21,15 @@ h3 {
 .post-content p {
   font-size: 1rem;
 }
+
+/* 调整页面的最大宽度 */
+.page__inner,
+.sidebar {
+  max-width: 1200px; /* 例如，可以设置为 1200px 或 1400px，宽一些 */
+}
+
+/* 调整文章内容区域的宽度 */
+.page__content {
+  max-width: 900px; /* 根据需求进行设置 */
+}
+
