@@ -7,9 +7,11 @@ url: "https://pcliu.github.io"  # 你的 GitHub Pages URL
 github_username: pcliu
 
 # Build settings
-theme: minima
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude files from processing
 exclude:
