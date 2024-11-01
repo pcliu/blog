@@ -22,5 +22,5 @@ sidebar:
 paginate: 5
 paginate_path: "/page:num/"
 
-minimal_mistakes_skin: "contrastPermalink"
+minimal_mistakes_skin: "contrast"
 
