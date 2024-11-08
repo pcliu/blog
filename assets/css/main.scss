@@ -7,20 +7,20 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 
 
-$doc-font-size: 10px !default;
+$doc-font-size: 12px !default;
 $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
 $doc-font-size-x-large: $doc-font-size * 1.375 !default;
 
 // Override font size variables
-$type-size-1: 0.625em !default; // ~31.248px
-$type-size-2: 0.625em !default; // ~25.008px
-$type-size-3: 0.625em !default; // ~20px
-$type-size-4: 0.625em !default; // ~16px
-$type-size-5: 0.625em !default; // ~12px
-$type-size-6: 0.625em !default; // ~11px
-$type-size-7: 0.625em !default; // ~10px
-$type-size-8: 0.625em !default; // ~10px
+$type-size-1: 0.75em !default; // ~31.248px
+$type-size-2: 0.75em !default; // ~25.008px
+$type-size-3: 0.75em !default; // ~20px
+$type-size-4: 0.75em !default; // ~16px
+$type-size-5: 0.75em !default; // ~12px
+$type-size-6: 0.75em !default; // ~11px
+$type-size-7: 0.75em !default; // ~10px
+$type-size-8: 0.75em !default; // ~10px
 
 // Import the Minimal Mistakes styles
 @import "minimal-mistakes";
