@@ -2,7 +2,7 @@ title: 技术日记
 email: your-email@example.com
 description: >- 
   Your blog description
-baseurl: "/blog"  # 因为你的仓库名是 blog
+baseurl: "/"  # 因为你的仓库名是 blog
 url: "https://pcliu.github.io"  # 你的 GitHub Pages URL
 github_username: pcliu
 
