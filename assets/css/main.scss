@@ -1,14 +1,37 @@
-
-
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
 ---
-
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
+// Import the selected skin (replace 'default' with your chosen skin if different)
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 
-$type-size-5: 0.625em !default; // ~10px
+// Override font size variables
+$type-size-1: 2.441em !default; 
+$type-size-2: 1.953em !default; 
+$type-size-3: 1.563em !default; 
+$type-size-4: 1.25em !default;  
+$type-size-5: 0.6em !default;     
+$type-size-6: 0.8em !default;   
+$type-size-7: 0.64em !default; 
+$type-size-8: 0.512em !default; 
+
+// Import the Minimal Mistakes styles
+@import "minimal-mistakes";
+
+// Adjust the base font size for different screen sizes
+html {
+  font-size: 14px; // Base font size for small screens
+
+  @include breakpoint($medium) {
+    font-size: 16px; // Medium screens
+  }
+
+  @include breakpoint($large) {
+    font-size: 18px; // Large screens
+  }
+
+  @include breakpoint($x-large) {
+    font-size: 20px; // Extra-large screens
+  }
+}
