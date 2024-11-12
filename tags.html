@@ -1,12 +1,6 @@
 ---
-layout: page
-title: "Tags"
+title: "Posts by Tag"
 permalink: /tags/
+layout: tags
+author_profile: true
 ---
-
-<h1>Tags</h1>
-<ul>
-  {% for tag in site.tags %}
-    <li><a href="{{ site.baseurl }}/tags/{{ tag | first | slugify }}">{{ tag | first }}</a></li>
-  {% endfor %}
-</ul>
