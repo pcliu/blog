@@ -35,6 +35,10 @@ tag_archive:
 
 sidebar:
   nav: "docs" 
+  
+lunr:
+  search_within_pages: true
+
 
 
 
