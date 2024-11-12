@@ -13,8 +13,6 @@ minimal_mistakes_skin : "contrast"
 
 locale: "zh-CN"
 
-logo: "/assets/images/travel-logo.svg"
-
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
