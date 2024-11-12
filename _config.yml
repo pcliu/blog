@@ -12,6 +12,9 @@ remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 minimal_mistakes_skin : "contrast"
 
 locale: "zh-CN"
+
+logo: "/assets/images/travel-logo.svg"
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
