@@ -1,12 +1,7 @@
 ---
-layout: page
-title: "Categories"
+title: "Posts by Category"
+layout: categories
 permalink: /categories/
+author_profile: true
 ---
 
-<h1>Categories</h1>
-<ul>
-  {% for category in site.categories %}
-    <li><a href="{{ site.baseurl }}/categories/{{ category | first | slugify }}">{{ category | first }}</a></li>
-  {% endfor %}
-</ul>
