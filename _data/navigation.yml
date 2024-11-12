@@ -8,7 +8,7 @@ main:
   - title: "标签"
     url: "/tags/"
   - title: "归档"
-    url: "/archive/"
+    url: "/collection-archive/"
     
 docs:
   - title: Getting Started
