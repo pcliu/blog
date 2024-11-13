@@ -42,6 +42,7 @@ search_provider : lunr
 lunr:
   search_within_pages    : true
 
+logo: "/assets/images/sailboat_logo_88x88.png"
 
 
 
