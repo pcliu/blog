@@ -1,9 +1,8 @@
-title: 游方埃
+title: 游方艾
 email: your-email@example.com
-description: >- 
-  Your blog description
-baseurl: ""  # 因为你的仓库名是 blog
-url: "https://blog.ufindai.com"  # 你的 GitHub Pages URL
+description: "技术博客"
+baseurl: ""  
+url: "https://blog.ufindai.com"  
 github_username: pcliu
 
 # Build settings
@@ -42,7 +41,7 @@ search_provider : lunr
 lunr:
   search_within_pages    : true
 
-logo: "/assets/images/sailboat_logo_88x88.png"
+logo: "/assets/images/sailboat_logo_enlarged_88x88.png"
 
 
 
