@@ -3,41 +3,25 @@
 
 @charset "utf-8";
 
-// Import the selected skin (replace 'default' with your chosen skin if different)
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
-
-
-$doc-font-size: 12px !default;
-$doc-font-size-medium: $doc-font-size * 1.125 !default;
-$doc-font-size-large: $doc-font-size * 1.25 !default;
-$doc-font-size-x-large: $doc-font-size * 1.375 !default;
-
-// Override font size variables
-$type-size-1: 0.75em !default; // ~31.248px
-$type-size-2: 0.75em !default; // ~25.008px
-$type-size-3: 0.75em !default; // ~20px
-$type-size-4: 0.75em !default; // ~16px
-$type-size-5: 0.75em !default; // ~12px
-$type-size-6: 0.75em !default; // ~11px
-$type-size-7: 0.75em !default; // ~10px
-$type-size-8: 0.75em !default; // ~10px
-
-// Import the Minimal Mistakes styles
-@import "minimal-mistakes";
-
-// Adjust the base font size for different screen sizes
+/* 自定义字体大小 */
 html {
-  font-size: 14px; // Base font size for small screens
+  font-size: 12px; // 基础字体大小，默认是 16px
 
   @include breakpoint($medium) {
-    font-size: 16px; // Medium screens
+    font-size: 14px; // 中等屏幕尺寸
   }
 
   @include breakpoint($large) {
-    font-size: 18px; // Large screens
+    font-size: 14px; // 大屏幕尺寸
   }
 
   @include breakpoint($x-large) {
-    font-size: 20px; // Extra-large screens
+    font-size: 14px; // 超大屏幕尺寸
   }
 }
+
+
+// Import the selected skin (replace 'default' with your chosen skin if different)
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
