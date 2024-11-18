@@ -1,6 +1,6 @@
 title: 游方艾
 email: your-email@example.com
-description: "技术博客"
+description: "思考的艺术"
 baseurl: ""  
 url: "https://blog.ufindai.com"  
 github_username: pcliu
@@ -43,9 +43,6 @@ lunr:
 
 logo: "/assets/images/sailboat_logo_enlarged_88x88.png"
 
-markdown: kramdown
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge
+mathjax: true
 
 
