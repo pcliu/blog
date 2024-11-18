@@ -3,23 +3,6 @@
 
 @charset "utf-8";
 
-/* 自定义字体大小 */
-html {
-  font-size: 12px; // 基础字体大小，默认是 16px
-
-  @include breakpoint($medium) {
-    font-size: 14px; // 中等屏幕尺寸
-  }
-
-  @include breakpoint($large) {
-    font-size: 14px; // 大屏幕尺寸
-  }
-
-  @include breakpoint($x-large) {
-    font-size: 14px; // 超大屏幕尺寸
-  }
-}
-
 
 // Import the selected skin (replace 'default' with your chosen skin if different)
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
