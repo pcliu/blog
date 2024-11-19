@@ -11,6 +11,7 @@ toc_icon: list
 toc_sticky: "true"
 sidebar:
   nav: docs
+comments: "true"
 ---
 # 和操作系统交互的方式
 通过编程接口与浏览器和文件系统交互，而非直接控制鼠标和键盘。它利用Playwright等自动化工具，以编程方式执行浏览器操作，如访问URL、滚动页面、点击链接等。这种方法比模拟人工输入更可靠和高效。
