@@ -8,3 +8,15 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+// 调整基础字体大小(默认是16px)
+$doc-font-size: 12px !default;
+
+// 调整不同级别的字体大小
+$type-size-1: 1.8em !default;  // ~25.2px
+$type-size-2: 1.5em !default;  // ~21px
+$type-size-3: 1.3em !default;  // ~18.2px
+$type-size-4: 1.1em !default;  // ~15.4px
+$type-size-5: 0.9em !default;  // ~12.6px
+$type-size-6: 0.8em !default;  // ~11.2px
+$type-size-7: 0.7em !default;  // ~9.8px
+$type-size-8: 0.6em !default;  // ~8.4px
