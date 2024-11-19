@@ -1,7 +1,7 @@
 ---
 ---
 /* Variables */
-$doc-font-size: 10px !default;
+$doc-font-size: 12px !default;
 $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
 $doc-font-size-x-large: $doc-font-size * 1.375 !default;
@@ -27,3 +27,28 @@ $type-size-8 : 0.6em  !default;
 // Import the selected skin (replace 'default' with your chosen skin if different)
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
+
+// 添加自定义样式来确保所有页面都使用相同的字体大小
+html {
+  font-size: $doc-font-size;
+  
+  @include breakpoint($medium) {
+    font-size: $doc-font-size-medium;
+  }
+
+  @include breakpoint($large) {
+    font-size: $doc-font-size-large;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: $doc-font-size-x-large;
+  }
+}
+
+// 确保文章内容使用一致的字体大小
+.page__content {
+  font-size: 1em;
+  
+  p, li, dl {
+    font-size: 1em;
+  }
