@@ -7,9 +7,9 @@
    ========================================================================== */
 
 $doc-font-size: 13px !default;
-$doc-font-size-medium: $doc-font-size * 1.125 !default;
-$doc-font-size-large: $doc-font-size * 1.25 !default;
-$doc-font-size-x-large: $doc-font-size * 1.375 !default;
+$doc-font-size-medium: $doc-font-size * 1.05;    // 原来是1.125
+$doc-font-size-large: $doc-font-size * 1.1;      // 原来是1.25
+$doc-font-size-x-large: $doc-font-size * 1.15;   // 原来是1.375
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
