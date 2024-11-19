@@ -55,4 +55,14 @@ analytics:
     tracking_id: "G-V0092YMJ2R"  # 你的 GA4 跟踪 ID
     anonymize_ip: false  # 可选,是否匿名化 IP
 
+repository: "pcliu/blog"  # 例如: "username/username.github.io"
 
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : "R_kgDONH3Uvg"
+    category_name        : "General"
+    category_id          : "DIC_kwDONH3Uvs4CkZLi"
+    discussion_term      : "pathname"
+    reactions_enabled    : '1'
+    theme               : "light"
