@@ -22,7 +22,7 @@ plugins:
 permalink: /:categories/:title/
 
 # Pagination with jekyll-paginate
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 
 category_archive:
