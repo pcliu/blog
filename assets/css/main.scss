@@ -1,6 +1,22 @@
 ---
 ---
+/* Variables */
+$doc-font-size: 12px !default;
 
+/* system typefaces */
+$serif      : Georgia, Times, serif !default;
+$sans-serif : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$monospace  : Monaco, Consolas, "Lucida Console", monospace !default;
+
+/* type scale */
+$type-size-1 : 1.8em  !default;  
+$type-size-2 : 1.5em  !default;  
+$type-size-3 : 1.3em  !default;  
+$type-size-4 : 1.1em  !default;  
+$type-size-5 : 0.9em  !default;  
+$type-size-6 : 0.8em  !default;  
+$type-size-7 : 0.7em  !default;  
+$type-size-8 : 0.6em  !default;
 
 @charset "utf-8";
 
