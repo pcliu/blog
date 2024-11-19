@@ -49,4 +49,10 @@ sass:
   sass_dir: _sass
   style: compressed
 
+analytics:
+  provider: "google-gtag"  # 使用最新的 gtag.js
+  google:
+    tracking_id: "G-V0092YMJ2R"  # 你的 GA4 跟踪 ID
+    anonymize_ip: false  # 可选,是否匿名化 IP
+
 
