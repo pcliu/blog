@@ -66,3 +66,12 @@ comments:
     discussion_term      : "pathname"
     reactions_enabled    : '1'
     theme               : "light"
+
+# Mermaid 配置
+mermaid:
+  # 启用 mermaid
+  enabled: true
+  # 版本号,建议使用最新稳定版
+  version: "11.4.0" 
+  # 主题配置
+  theme: "default"
