@@ -72,6 +72,6 @@ mermaid:
   # 启用 mermaid
   enabled: true
   # 版本号,建议使用最新稳定版
-  version: "11.4.0" 
+  version: "9.4.3" 
   # 主题配置
   theme: "default"
