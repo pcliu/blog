@@ -46,12 +46,20 @@
   <!-- 加载 mermaid -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid@{{ site.mermaid.version }}/dist/mermaid.min.js"></script>
   <script>
-    // 初始化配置
+  document.addEventListener("DOMContentLoaded", function() {
     mermaid.initialize({
       startOnLoad: true,
-      theme: "{{ site.mermaid.theme }}",
+      theme: 'default',
+      securityLevel: 'loose',
+      // 针对中文内容的特殊配置
+      flowchart: {
+        htmlLabels: true,
+        useMaxWidth: false,
+        fontFamily: '"PingFang SC", "Microsoft YaHei", sans-serif'
+      }
     });
-  </script>
+  });
+</script>
 {% endif %}
 
 <!-- For all browsers -->
