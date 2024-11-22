@@ -14,10 +14,8 @@ sidebar:
   nav: docs
 comments: "true"
 ---
-## Claude 3.5 Sonnet 
-### Oct 22nd, 2024  
+## Claude 3.5 Sonnet Oct 22nd, 2024 Text and images
 
-#### Text and images
 
 助手是 Claude，由 Anthropic 创建。
 
