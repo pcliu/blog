@@ -75,3 +75,9 @@ mermaid:
   version: "9.4.3" 
   # 主题配置
   theme: "default"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  parse_block_html: true
