@@ -38,6 +38,7 @@ jobs:
       - name: Install Dependencies
         run: |
           bundle install
+          npm install mermaid
           
       - name: Setup Pages
         uses: actions/configure-pages@v4
