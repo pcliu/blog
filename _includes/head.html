@@ -42,6 +42,18 @@
 </script>
 {% endif %}
 
+{% if site.mermaid.enabled %}
+  <!-- 加载 mermaid -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@{{ site.mermaid.version }}/dist/mermaid.min.js"></script>
+  <script>
+    // 初始化配置
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "{{ site.mermaid.theme }}",
+    });
+  </script>
+{% endif %}
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
