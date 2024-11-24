@@ -47,17 +47,18 @@
   <script src="https://cdn.jsdelivr.net/npm/mermaid@{{ site.mermaid.version }}/dist/mermaid.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-      if (typeof mermaid !== 'undefined') {
-        mermaid.initialize({
-          startOnLoad: true,
-          theme: '{{ site.mermaid.theme }}',
-          securityLevel: 'loose',
-          flowchart: {
-            htmlLabels: true,
-            useMaxWidth: false,
-            fontFamily: '"PingFang SC", "Microsoft YaHei", sans-serif'
-          }
-        });
+      try {
+        if (typeof mermaid !== 'undefined') {
+          mermaid.initialize({
+            startOnLoad: true,
+            theme: '{{ site.mermaid.theme }}',
+            securityLevel: 'loose'
+          });
+        } else {
+          console.error('Mermaid is not loaded');
+        }
+      } catch(e) {
+        console.error('Error initializing mermaid:', e);
       }
     });
   </script>
