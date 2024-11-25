@@ -19,6 +19,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-mermaid
+  - jekyll-spaceship
 
 permalink: /:categories/:title/
 
@@ -77,10 +78,15 @@ mermaid:
   # 主题配置
   theme: "default"
 
-# Markdown 处理器设置
-markdown: kramdown
-kramdown:
-  syntax_highlighter: rouge
-  input: GFM  # GitHub Flavored Markdown
-  auto_ids: true
-  hard_wrap: false
+# 添加 jekyll-spaceship 配置
+jekyll-spaceship:
+  # default enabled processors
+  processors:
+    - table-processor
+    - mathjax-processor
+    - plantuml-processor
+    - mermaid-processor
+    - polyfill-processor
+    - media-processor
+    - emoji-processor
+    - element-processor
