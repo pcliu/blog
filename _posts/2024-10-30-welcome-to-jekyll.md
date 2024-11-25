@@ -38,3 +38,20 @@ graph TD
     C --> E[结束]
     D --> E
 ```
+
+
+#### 测试
+
+<div class="mermaid">
+
+graph TB
+
+    A[开始] --> B{判断}
+
+    B -- Yes --> C[执行]
+
+    B -- No --> D[结束]
+
+    C --> D
+
+</div>
