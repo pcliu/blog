@@ -18,6 +18,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-mermaid
 
 permalink: /:categories/:title/
 
