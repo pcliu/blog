@@ -76,3 +76,11 @@ mermaid:
   version: "11.4.0" 
   # 主题配置
   theme: "default"
+
+# Markdown 处理器设置
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM  # GitHub Flavored Markdown
+  auto_ids: true
+  hard_wrap: false
