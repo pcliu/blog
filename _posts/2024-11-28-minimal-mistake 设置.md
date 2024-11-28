@@ -21,10 +21,35 @@ $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
 $doc-font-size-x-large: $doc-font-size * 1.375 !default;
 ```
-2. 需要在本地创建assets/css/main.scss，添加自定义样式：
 
-``` css
+2. 需要在本地创建assets/css/main.scss，添加自定义样式：
+```css
+---
+---
+/* Variables */
+$doc-font-size: 12px !default;
+$doc-font-size-medium: $doc-font-size * 1.125 !default;
+$doc-font-size-large: $doc-font-size * 1.25 !default;
+$doc-font-size-x-large: $doc-font-size * 1.375 !default;
+
+/* system typefaces */
+$serif      : Georgia, Times, serif !default;
+$sans-serif : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$monospace  : Monaco, Consolas, "Lucida Console", monospace !default;
+
+/* type scale */
+$type-size-1 : 1.8em  !default;  
+$type-size-2 : 1.5em  !default;  
+$type-size-3 : 1.3em  !default;  
+$type-size-4 : 1.1em  !default;  
+$type-size-5 : 0.9em  !default;  
+$type-size-6 : 0.8em  !default;  
+$type-size-7 : 0.7em  !default;  
+$type-size-8 : 0.6em  !default;
+
+
 @charset "utf-8";
+
 
 // Import the selected skin (replace 'default' with your chosen skin if different)
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
