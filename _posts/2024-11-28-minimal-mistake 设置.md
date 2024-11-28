@@ -2,7 +2,7 @@
 title: 2024-11-28-minimal-mistake 设置
 date: 2024-11-28 10:20:05 +0800
 categories: 技术
-tags: []
+tags: 
 layout: single
 toc: "true"
 toc_label: 目录
@@ -21,10 +21,11 @@ $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
 $doc-font-size-x-large: $doc-font-size * 1.375 !default;
 ```
-2. 需要在本地创建assets/css/main.scss，添加自定义样式
-``` css
-@charset "utf-8";
+2. 需要在本地创建assets/css/main.scss，添加自定义样式：
 
+``` css
+
+@charset "utf-8";
 
 // Import the selected skin (replace 'default' with your chosen skin if different)
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
