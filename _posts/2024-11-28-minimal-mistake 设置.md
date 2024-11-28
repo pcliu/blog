@@ -1,0 +1,82 @@
+---
+title: 2024-11-28-minimal-mistake 设置
+date: 2024-11-28 10:20:05 +0800
+categories: 技术
+tags: []
+layout: single
+toc: "true"
+toc_label: 目录
+toc_icon: list
+toc_sticky: "true"
+sidebar:
+  nav: docs
+comments: "true"
+---
+## 字体设置
+
+1. 需要在本地创建_sass/minimal-mistakes/_variables.scss ，修改相关变量：
+``` css
+$doc-font-size: 12px !default;
+$doc-font-size-medium: $doc-font-size * 1.125 !default;
+$doc-font-size-large: $doc-font-size * 1.25 !default;
+$doc-font-size-x-large: $doc-font-size * 1.375 !default;
+```
+3. 需要在本地创建assets/css/main.scss，添加自定义样式
+``` css
+
+@charset "utf-8";
+
+
+// Import the selected skin (replace 'default' with your chosen skin if different)
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// 添加自定义样式来确保所有页面都使用相同的字体大小
+html {
+  font-size: $doc-font-size;
+  
+  @include breakpoint($medium) {
+    font-size: $doc-font-size-medium;
+  }
+
+  @include breakpoint($large) {
+    font-size: $doc-font-size-large;
+  }
+
+  @include breakpoint($x-large) {
+    font-size: $doc-font-size-x-large;
+  }
+}
+
+// 确保文章内容使用一致的字体大小
+.page__content {
+  font-size: 1em;
+  
+  p, li, dl {
+    font-size: 1em;
+  }
+}
+```
+
+---
+---
+/* Variables */
+$doc-font-size: 12px !default;
+$doc-font-size-medium: $doc-font-size * 1.125 !default;
+$doc-font-size-large: $doc-font-size * 1.25 !default;
+$doc-font-size-x-large: $doc-font-size * 1.375 !default;
+
+/* system typefaces */
+$serif      : Georgia, Times, serif !default;
+$sans-serif : -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$monospace  : Monaco, Consolas, "Lucida Console", monospace !default;
+
+/* type scale */
+$type-size-1 : 1.8em  !default;  
+$type-size-2 : 1.5em  !default;  
+$type-size-3 : 1.3em  !default;  
+$type-size-4 : 1.1em  !default;  
+$type-size-5 : 0.9em  !default;  
+$type-size-6 : 0.8em  !default;  
+$type-size-7 : 0.7em  !default;  
+$type-size-8 : 0.6em  !default;
