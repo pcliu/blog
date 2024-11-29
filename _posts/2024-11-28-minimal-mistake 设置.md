@@ -24,10 +24,8 @@ $doc-font-size-x-large: $doc-font-size * 1.375 !default;
 
 2. 需要在本地创建assets/css/main.scss，添加自定义样式：
 
-```css
----
----
-/* Variables */
+``` css
+
 $doc-font-size: 12px !default;
 $doc-font-size-medium: $doc-font-size * 1.125 !default;
 $doc-font-size-large: $doc-font-size * 1.25 !default;
