@@ -1,5 +1,5 @@
 ---
-title: Anthropic MCP Server配置调试
+title: Anthropic MCP 介绍
 date: 2024-12-10 21:42:39 +0800
 categories: 技术
 tags:
@@ -13,6 +13,26 @@ sidebar:
   nav: docs
 comments: "true"
 ---
+## MCP时序图
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Claude
+    participant Tools as 工具选择
+    participant MCP as MCP Server
+    
+    Client->>+Claude: 1. 发送问题
+    Claude->>+Tools: 2. 分析并选择工具
+    Tools->>+MCP: 3. 执行工具
+    MCP-->>-Tools: 4. 返回结果
+    Tools-->>-Claude: 传递结果
+    Claude->>Claude: 5. 生成自然语言响应
+    Claude-->>-Client: 6. 显示结果
+```
+
+
+## MCP调试
 ### uvx命令的MCP Server无法启动
 
 在Mac OS中，通过命令安装UV
