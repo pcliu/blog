@@ -15,23 +15,8 @@ comments: "true"
 ---
 ## MCP时序图
 
-```mermaid
-sequenceDiagram
-    participant Client
-    participant Claude
-    participant Tools as 工具选择
-    participant MCP as MCP Server
-    
-    Client->>+Claude: 1. 发送问题
-    Claude->>+Tools: 2. 分析并选择工具
-    Tools->>+MCP: 3. 执行工具
-    MCP-->>-Tools: 4. 返回结果
-    Tools-->>-Claude: 传递结果
-    Claude->>Claude: 5. 生成自然语言响应
-    Claude-->>-Client: 6. 显示结果
-```
 
-
+![](https://d2m4tio3tm4t0x.cloudfront.net/2024/12/e13f142ee2cbde7d77c63f9b6e6f6e5b.svg)
 ## MCP调试
 ### uvx命令的MCP Server无法启动
 
