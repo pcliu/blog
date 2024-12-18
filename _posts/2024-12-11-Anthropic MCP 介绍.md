@@ -20,6 +20,7 @@ comments: "true"
 模型通过 MCP Resource 读取文档内容的完整流程：
 
 1. **MCP Server 端准备工作**：
+
 ```typescript
 // 服务器需要实现资源列表和读取能力
 const server = new Server({
