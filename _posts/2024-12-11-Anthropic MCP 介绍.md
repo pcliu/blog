@@ -142,6 +142,7 @@ server.setRequestHandler(ReadResourceRequestSchema, async (request) => {
 让我以一个实时股票价格查询的例子来说明如何通过 MCP Tool 来让模型访问动态数据：
 
 1. **MCP Server 端的工具定义**：
+
 ```typescript
 const server = new Server({
   name: "stock-server",
@@ -262,6 +263,7 @@ Claude：根据最新数据，苹果公司(AAPL)的当前股价是 187.42 美元
   - Resource：通常是预定义的内容
 
 5. **安全考虑**：
+
 ```typescript
 // 工具调用前的验证
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
@@ -290,6 +292,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
 ### uvx命令的MCP Server无法启动
 
 在Mac OS中，通过命令安装UV
+
 ```bash
 curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | sh
 ```
