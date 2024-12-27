@@ -15,6 +15,8 @@ comments: "true"
 ---
 ## MCP架构和原理
 
+
+![](https://d2m4tio3tm4t0x.cloudfront.net/2024/12/e13f142ee2cbde7d77c63f9b6e6f6e5b.svg)
 ### 资源的交互方式
 
 模型通过 MCP Resource 读取文档内容的完整流程：
